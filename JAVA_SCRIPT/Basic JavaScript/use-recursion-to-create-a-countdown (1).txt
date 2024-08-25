@@ -1,0 +1,13 @@
+// Only change code below this line
+function countdown(n){
+if (n < 1) {
+    return [];
+  } else {
+    let array = countdown(n-1);
+    array.unshift(n)
+    console.log("pushing " + n + "into array...")
+    return array
+  }
+
+}
+// Only change code above this line
